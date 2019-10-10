@@ -1,0 +1,9 @@
+version: '2.3'
+services:
+  media-server:
+    image: registry.insight-centre.org/sit/mps/media-server:latest
+    build:
+      context: '.'
+      dockerfile: 'Dockerfile'
+    ports:
+      - "1935:1935"
